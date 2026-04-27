@@ -1,6 +1,7 @@
 # human-mcp
 
-A Windows 10-focused MCP for desktop automation built in TypeScript.
+An MCP for desktop automation built in TypeScript, aimmed to replace anything a human can do (move mouse, input text, find things on screen...)
+Once the MCP is running, an agent can call the HTTP endpoints to control the machine.
 
 ## What this project includes
 
@@ -72,8 +73,21 @@ curl -X POST http://localhost:4070/invoke \
 2. Run `npm start`.
 3. Use `curl` or another HTTP client to invoke tools.
 
-## Notes
+# Kanban board:
 
-- This initial version implements the two most straightforward tools: `enter_text` and `single_click_mouse`.
-- The server also exposes other desktop tool entrypoints, with `search_point_or_area_on_screen` currently a placeholder.
-- Once the MCP is running, an agent can call the HTTP endpoints to control the machine.
+## Backlog
+
+- `TASK-5`: improve search_point_or_area_on_screen tool to not depend on static images from "assets" dir (maybe search on web?)
+- `TASK-6`: cover with unit tests to 100%
+- `TASK-7`: find a way to connect the MCP to a Whatsapp bot, such that I can perform stuff on my computer from far away
+- `TASK-8`: add a flag for OS type, and add support to Windows 11 (might not require changes), Mac, Linux
+
+## In progress
+
+- `TASK-2`: test integration to VS Code's "mcp.json" 
+- `TASK-3`: create a prompt which will test basic functionality, to pose as regression tests
+- `TASK-4`: continue testing search_point_or_area_on_screen tool
+
+## Done
+
+- `TASK-1`: implement basic MCP which can move on screen
