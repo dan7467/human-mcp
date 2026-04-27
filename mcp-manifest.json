@@ -1,0 +1,42 @@
+{
+  "name": "human-mcp",
+  "description": "Local Windows MCP for desktop automation tools.",
+  "version": "0.1.0",
+  "server": {
+    "url": "http://localhost:4070",
+    "toolsEndpoint": "/tools",
+    "invokeEndpoint": "/invoke"
+  },
+  "tools": [
+    {
+      "name": "enter_text",
+      "description": "Type text using the system keyboard.",
+      "inputs": { "text": "string" }
+    },
+    {
+      "name": "single_click_mouse",
+      "description": "Move the mouse to a screen coordinate and perform a left click.",
+      "inputs": { "x": "number", "y": "number" }
+    },
+    {
+      "name": "move_mouse",
+      "description": "Move the mouse to a screen coordinate.",
+      "inputs": { "x": "number", "y": "number" }
+    },
+    {
+      "name": "double_click_mouse",
+      "description": "Move the mouse and perform a double left click.",
+      "inputs": { "x": "number", "y": "number" }
+    },
+    {
+      "name": "right_click_mouse",
+      "description": "Move the mouse and perform a right click.",
+      "inputs": { "x": "number", "y": "number" }
+    },
+    {
+      "name": "search_point_or_area_on_screen",
+      "description": "Search the screen for an image or area. Placeholder implementation.",
+      "inputs": { "query": "string" }
+    }
+  ]
+}
