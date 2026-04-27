@@ -78,7 +78,7 @@ curl -X POST http://localhost:4070/invoke \
 ## Backlog
 
 - `TASK-5`: improve search_point_or_area_on_screen tool to not depend on static images from "assets" dir (maybe search on web?)
-- `TASK-6`: cover with unit tests to 100%
+- `TASK-6`: cover with unit tests to 100% (create package.json script), and create a Github Action to run the unit tests script after every commit
 - `TASK-7`: find a way to connect the MCP to a Whatsapp bot, such that I can perform stuff on my computer from far away
 - `TASK-8`: add a flag for OS type, and add support to Windows 11 (might not require changes), Mac, Linux
 
