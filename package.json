@@ -1,0 +1,23 @@
+{
+  "name": "human-mcp",
+  "version": "0.1.0",
+  "description": "A Windows 10-focused MCP for desktop automation, exposing tools like enter_text and single_click_mouse.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "serve": "node dist/server.js",
+    "start": "npm run build && npm run serve"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "jimp": "^0.22.10",
+    "robotjs": "^0.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.5.0"
+  }
+}
