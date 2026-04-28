@@ -34,7 +34,7 @@
       "inputs": { "x": "number", "y": "number" }
     },
     {
-      "name": "search_point_or_area_on_screen",
+      "name": "search_on_screen",
       "description": "Search the screen for an image or area. Placeholder implementation.",
       "inputs": { "query": "string" }
     }

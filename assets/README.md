@@ -1,6 +1,6 @@
-# Asset Templates for search_point_or_area_on_screen
+# Asset Templates for search_on_screen
 
-This folder stores template PNG images used by the `search_point_or_area_on_screen` tool.
+This folder stores template PNG images used by the `search_on_screen` tool.
 
 The MCP matches natural language queries against the templates defined in `src/desktopController.ts`.
 

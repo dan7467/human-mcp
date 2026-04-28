@@ -10,11 +10,11 @@ Once the MCP is running, an agent can call the HTTP endpoints to control the mac
 - `move_mouse(x, y)` - moves the mouse cursor
 - `double_click_mouse(x, y)` - performs a double left-click
 - `right_click_mouse(x, y)` - performs a right-click
-- `search_point_or_area_on_screen(query)` - searches the screen for a target template image and returns a click point
+- `search_on_screen(query)` - searches the screen for a target template image and returns a click point
 
 ### Notes on search
 
-The `search_point_or_area_on_screen` tool uses local image templates from `assets/` to find a matching screen region. For example, a query like "Google Chrome icon" will match a template file such as `assets/chrome.png` when the mapping is configured in the MCP.
+The `search_on_screen` tool uses local image templates from `assets/` to find a matching screen region. For example, a query like "Google Chrome icon" will match a template file such as `assets/chrome.png` when the mapping is configured in the MCP.
 
 ## How this is an MCP
 
@@ -77,16 +77,16 @@ curl -X POST http://localhost:4070/invoke \
 
 ## Backlog
 
-- `TASK-5`: improve search_point_or_area_on_screen tool to not depend on static images from "assets" dir (maybe search on web?)
+- `TASK-5`: improve search_on_screen tool to not depend on static images from "assets" dir (maybe search on web?)
 - `TASK-6`: cover with unit tests to 100% (create package.json script), and create a Github Action to run the unit tests script after every commit
 - `TASK-7`: find a way to connect the MCP to a Whatsapp bot, such that I can perform stuff on my computer from far away
 - `TASK-8`: add a flag for OS type, and add support to Windows 11 (might not require changes), Mac, Linux
 
 ## In progress
 
-- `TASK-2`: test integration to VS Code's "mcp.json" 
+- `TASK-2`: test integration to VS Code's "mcp.json"
 - `TASK-3`: create a prompt which will test basic functionality, to pose as regression tests
-- `TASK-4`: continue testing search_point_or_area_on_screen tool
+- `TASK-4`: continue testing search_on_screen tool
 
 ## Done
 

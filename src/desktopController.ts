@@ -31,7 +31,7 @@ export async function right_click_mouse(x: number, y: number): Promise<void> {
   robot.mouseClick("right");
 }
 
-async function search_point_or_area_on_screen(
+async function search_on_screen(
   query: string,
 ): Promise<{ x: number; y: number } | null> {
   const worker = await createWorker("eng");

@@ -5,7 +5,7 @@ import {
   move_mouse,
   double_click_mouse,
   right_click_mouse,
-  search_point_or_area_on_screen,
+  search_on_screen,
 } from "./desktopController";
 
 export interface MCPTool {
@@ -42,7 +42,7 @@ const tools: MCPTool[] = [
     inputs: { x: "number", y: "number" },
   },
   {
-    name: "search_point_or_area_on_screen",
+    name: "search_on_screen",
     description:
       "Search the screen for an image or area. Placeholder implementation.",
     inputs: { query: "string" },
@@ -64,8 +64,8 @@ export async function invokeTool(
       return double_click_mouse(Number(args.x), Number(args.y));
     case "right_click_mouse":
       return right_click_mouse(Number(args.x), Number(args.y));
-    case "search_point_or_area_on_screen":
-      return search_point_or_area_on_screen(String(args.query ?? ""));
+    case "search_on_screen":
+      return search_on_screen(String(args.query ?? ""));
     default:
       throw new Error(`Unknown tool: ${toolName}`);
   }
